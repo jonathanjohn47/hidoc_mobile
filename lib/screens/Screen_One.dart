@@ -277,26 +277,28 @@ class Screen_One extends StatelessWidget {
                                                     height: 16,
                                                     width: 16,
                                                   ),
-                                                  Padding(
-                                                    padding:
-                                                        EdgeInsets.symmetric(
-                                                            vertical: 0,
-                                                            horizontal: 8),
-                                                    child: Text(
-                                                      e.articleDescription,
-                                                      textAlign:
-                                                          TextAlign.start,
-                                                      maxLines: 4,
-                                                      overflow:
-                                                          TextOverflow.clip,
-                                                      style: TextStyle(
-                                                        fontWeight:
-                                                            FontWeight.w400,
-                                                        fontStyle:
-                                                            FontStyle.normal,
-                                                        fontSize: 12,
-                                                        color:
-                                                            Color(0xff000000),
+                                                  Expanded(
+                                                    child: Padding(
+                                                      padding:
+                                                          EdgeInsets.symmetric(
+                                                              vertical: 0,
+                                                              horizontal: 8),
+                                                      child: Text(
+                                                        e.articleDescription,
+                                                        textAlign:
+                                                            TextAlign.start,
+                                                        maxLines: 4,
+                                                        overflow:
+                                                            TextOverflow.clip,
+                                                        style: TextStyle(
+                                                          fontWeight:
+                                                              FontWeight.w400,
+                                                          fontStyle:
+                                                              FontStyle.normal,
+                                                          fontSize: 12,
+                                                          color:
+                                                              Color(0xff000000),
+                                                        ),
                                                       ),
                                                     ),
                                                   ),
@@ -423,6 +425,8 @@ class Screen_One extends StatelessWidget {
                                     ],
                                     options: CarouselOptions(
                                       viewportFraction: 0.7,
+                                      height: 45.h,
+                                      enlargeCenterPage: true,
 
                                     ),
                                   ),
