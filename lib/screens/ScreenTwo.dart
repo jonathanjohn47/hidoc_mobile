@@ -23,24 +23,7 @@ class ScreenTwo extends StatelessWidget {
             child: CircleAvatar(
               radius: 45.w,
               backgroundColor: Color(0xfffabea7),
-            ) /*Container(
-                width: 50.w,
-                height: 50.w,
-                decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    gradient: LinearGradient(colors: [
-                      Color(0xfff9bda6),
-                      Color(0xfff9bfa6),
-                      Color(0xfffac0a5),
-                      Color(0xfff7c2a5),
-                      Color(0xfff8c6a2),
-                      Color(0xfff8c6a3),
-                      Color(0xfffbcaa1),
-                      Color(0xfffacaa0),
-                      Color(0xfffacaa0),
-                    ])),
-              )*/
-            ,
+            ),
           ),
           Padding(
             padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
