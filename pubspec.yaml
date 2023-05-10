@@ -38,6 +38,8 @@ dependencies:
   sizer: ^2.0.15
   get: ^4.6.5
   material_design_icons_flutter: ^6.0.7096
+  http: ^0.13.6
+  carousel_slider: ^4.2.1
 
 dev_dependencies:
   flutter_test:
