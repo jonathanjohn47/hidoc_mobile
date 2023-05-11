@@ -13,13 +13,15 @@ import 'package:sizer/sizer.dart';
 class Screen_One extends StatelessWidget {
   ScreenOneGetController getController = Get.put(ScreenOneGetController());
 
+  Screen_One({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(0),
+        preferredSize: const Size.fromHeight(0),
         child: Container(
-          color: Color(0xfffabea7),
+          color: const Color(0xfffabea7),
         ),
       ),
       body: Stack(
@@ -33,7 +35,7 @@ class Screen_One extends StatelessWidget {
               child: Container(
                   width: 60.w,
                   height: 60.w,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                       gradient: RadialGradient(colors: [
                         Color(0xfff9bda6),
@@ -58,10 +60,10 @@ class Screen_One extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+            padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
             child: Column(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 16,
                   width: 16,
                 ),
@@ -72,19 +74,19 @@ class Screen_One extends StatelessWidget {
                   children: [
                     Container(
                       alignment: Alignment.center,
-                      margin: EdgeInsets.all(0),
-                      padding: EdgeInsets.all(0),
+                      margin: const EdgeInsets.all(0),
+                      padding: const EdgeInsets.all(0),
                       width: 60,
                       height: 20,
                       decoration: BoxDecoration(
-                        color: Color(0xffd0f1f6),
+                        color: const Color(0xffd0f1f6),
                         shape: BoxShape.rectangle,
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(8.0),
                             bottomRight: Radius.circular(8.0)),
-                        border: Border.all(color: Color(0xffd0f1f6), width: 1),
+                        border: Border.all(color: const Color(0xffd0f1f6), width: 1),
                       ),
-                      child: Text(
+                      child: const Text(
                         "hidoc",
                         textAlign: TextAlign.start,
                         overflow: TextOverflow.clip,
@@ -98,7 +100,7 @@ class Screen_One extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                   width: 16,
                 ),
@@ -106,7 +108,7 @@ class Screen_One extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisSize: MainAxisSize.max,
-                  children: [
+                  children: const [
                     Icon(
                       Icons.home,
                       color: Color(0xffffffff),
@@ -131,7 +133,7 @@ class Screen_One extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                   width: 16,
                 ),
@@ -147,18 +149,18 @@ class Screen_One extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisSize: MainAxisSize.max,
                               children: [
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                   width: 16,
                                 ),
                                 Card(
-                                  margin: EdgeInsets.all(4),
-                                  color: Color(0xffe0e0e0),
-                                  shadowColor: Color(0xff000000),
+                                  margin: const EdgeInsets.all(4),
+                                  color: const Color(0xffe0e0e0),
+                                  shadowColor: const Color(0xff000000),
                                   elevation: 3,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(8.0),
-                                    side: BorderSide(
+                                    side: const BorderSide(
                                         color: Color(0x4d9e9e9e), width: 1),
                                   ),
                                   child: ClipRRect(
@@ -167,10 +169,10 @@ class Screen_One extends StatelessWidget {
                                         width:
                                             MediaQuery.of(context).size.width,
                                         height: 50,
-                                        padding: EdgeInsets.symmetric(
+                                        padding: const EdgeInsets.symmetric(
                                             vertical: 4, horizontal: 8),
                                         decoration: BoxDecoration(
-                                          color: Color(0xffffffff),
+                                          color: const Color(0xffffffff),
                                           borderRadius:
                                               BorderRadius.circular(0),
                                         ),
@@ -185,7 +187,7 @@ class Screen_One extends StatelessWidget {
                                                 child: Text(value),
                                               );
                                             }).toList(),
-                                            style: TextStyle(
+                                            style: const TextStyle(
                                               color: Color(0xff000000),
                                               fontSize: 16,
                                               fontWeight: FontWeight.w400,
@@ -198,16 +200,16 @@ class Screen_One extends StatelessWidget {
                                         )),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                   width: 16,
                                 ),
                                 Card(
-                                  margin: EdgeInsets.all(4),
-                                  color: Color(0xffffffff),
-                                  shadowColor: Color(0xff000000),
+                                  margin: const EdgeInsets.all(4),
+                                  color: const Color(0xffffffff),
+                                  shadowColor: const Color(0xff000000),
                                   elevation: 3,
-                                  shape: RoundedRectangleBorder(
+                                  shape: const RoundedRectangleBorder(
                                     borderRadius: BorderRadius.only(
                                       topLeft: Radius.circular(8.0),
                                       topRight: Radius.circular(8.0),
@@ -229,7 +231,7 @@ class Screen_One extends StatelessWidget {
                                                 children: [
                                                   ClipRRect(
                                                     borderRadius:
-                                                        BorderRadius.only(
+                                                        const BorderRadius.only(
                                                             topLeft:
                                                                 Radius.circular(
                                                                     4.0),
@@ -246,13 +248,13 @@ class Screen_One extends StatelessWidget {
                                                       fit: BoxFit.cover,
                                                     ),
                                                   ),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     height: 16,
                                                     width: 16,
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsets.symmetric(
+                                                        const EdgeInsets.symmetric(
                                                             vertical: 0,
                                                             horizontal: 8),
                                                     child: Text(
@@ -262,7 +264,7 @@ class Screen_One extends StatelessWidget {
                                                       maxLines: 3,
                                                       overflow:
                                                           TextOverflow.clip,
-                                                      style: TextStyle(
+                                                      style: const TextStyle(
                                                         fontWeight:
                                                             FontWeight.w700,
                                                         fontStyle:
@@ -273,14 +275,14 @@ class Screen_One extends StatelessWidget {
                                                       ),
                                                     ),
                                                   ),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     height: 16,
                                                     width: 16,
                                                   ),
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsets.symmetric(
+                                                          const EdgeInsets.symmetric(
                                                               vertical: 0,
                                                               horizontal: 8),
                                                       child: Text(
@@ -290,7 +292,7 @@ class Screen_One extends StatelessWidget {
                                                         maxLines: 4,
                                                         overflow:
                                                             TextOverflow.clip,
-                                                        style: TextStyle(
+                                                        style: const TextStyle(
                                                           fontWeight:
                                                               FontWeight.w400,
                                                           fontStyle:
@@ -302,7 +304,7 @@ class Screen_One extends StatelessWidget {
                                                       ),
                                                     ),
                                                   ),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     height: 16,
                                                     width: 16,
                                                   ),
@@ -315,7 +317,7 @@ class Screen_One extends StatelessWidget {
                                                     mainAxisSize:
                                                         MainAxisSize.max,
                                                     children: [
-                                                      Expanded(
+                                                      const Expanded(
                                                         flex: 1,
                                                         child: Align(
                                                           alignment: Alignment(
@@ -343,24 +345,24 @@ class Screen_One extends StatelessWidget {
                                                       ),
                                                       Container(
                                                         margin:
-                                                            EdgeInsets.all(0),
+                                                            const EdgeInsets.all(0),
                                                         padding:
-                                                            EdgeInsets.all(0),
+                                                            const EdgeInsets.all(0),
                                                         width: 60,
                                                         height: 40,
                                                         decoration:
                                                             BoxDecoration(
                                                           color:
-                                                              Color(0xff02bdd5),
+                                                              const Color(0xff02bdd5),
                                                           shape: BoxShape
                                                               .rectangle,
                                                           borderRadius:
-                                                              BorderRadius.only(
+                                                              const BorderRadius.only(
                                                                   bottomRight: Radius
                                                                       .circular(
                                                                           8.0)),
                                                           border: Border.all(
-                                                              color: Color(
+                                                              color: const Color(
                                                                   0xff02bdd5),
                                                               width: 1),
                                                         ),
@@ -373,7 +375,7 @@ class Screen_One extends StatelessWidget {
                                                                   .center,
                                                           mainAxisSize:
                                                               MainAxisSize.max,
-                                                          children: [
+                                                          children: const [
                                                             Text(
                                                               "Points",
                                                               textAlign:
@@ -431,11 +433,11 @@ class Screen_One extends StatelessWidget {
                                     ),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                   width: 16,
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                   width: 16,
                                 ),
@@ -443,7 +445,7 @@ class Screen_One extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   mainAxisSize: MainAxisSize.max,
-                                  children: [
+                                  children: const [
                                     Text(
                                       "Hidoc Bulletin",
                                       textAlign: TextAlign.start,
@@ -457,7 +459,7 @@ class Screen_One extends StatelessWidget {
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                   width: 16,
                                 ),
@@ -489,19 +491,19 @@ class Screen_One extends StatelessWidget {
                                                             0.3,
                                                     height: 8,
                                                     decoration: BoxDecoration(
-                                                      color: Color(0xff02bdd5),
+                                                      color: const Color(0xff02bdd5),
                                                       shape: BoxShape.rectangle,
                                                       borderRadius:
                                                           BorderRadius.zero,
                                                       border: Border.all(
                                                           color:
-                                                              Color(0x4d9e9e9e),
+                                                              const Color(0x4d9e9e9e),
                                                           width: 0),
                                                     ),
                                                   ),
                                                 ],
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 height: 8,
                                                 width: 16,
                                               ),
@@ -509,14 +511,14 @@ class Screen_One extends StatelessWidget {
                                                 e.articleTitle,
                                                 textAlign: TextAlign.start,
                                                 overflow: TextOverflow.clip,
-                                                style: TextStyle(
+                                                style: const TextStyle(
                                                   fontWeight: FontWeight.w600,
                                                   fontStyle: FontStyle.normal,
                                                   fontSize: 13,
                                                   color: Color(0xff000000),
                                                 ),
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 height: 8,
                                                 width: 16,
                                               ),
@@ -524,14 +526,14 @@ class Screen_One extends StatelessWidget {
                                                 e.articleDescription,
                                                 textAlign: TextAlign.start,
                                                 overflow: TextOverflow.clip,
-                                                style: TextStyle(
+                                                style: const TextStyle(
                                                   fontWeight: FontWeight.w400,
                                                   fontStyle: FontStyle.normal,
                                                   fontSize: 12,
                                                   color: Color(0xff000000),
                                                 ),
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 height: 8,
                                                 width: 16,
                                               ),
@@ -541,7 +543,7 @@ class Screen_One extends StatelessWidget {
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.center,
                                                 mainAxisSize: MainAxisSize.max,
-                                                children: [
+                                                children: const [
                                                   Text(
                                                     "Read More...",
                                                     textAlign: TextAlign.start,
@@ -557,7 +559,7 @@ class Screen_One extends StatelessWidget {
                                                   ),
                                                 ],
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 height: 8,
                                                 width: 16,
                                               ),
@@ -567,22 +569,22 @@ class Screen_One extends StatelessWidget {
                                         .toList()
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                   width: 16,
                                 ),
                                 Card(
-                                  margin: EdgeInsets.all(4.0),
-                                  color: Color(0xffd8ecef),
-                                  shadowColor: Color(0xff000000),
+                                  margin: const EdgeInsets.all(4.0),
+                                  color: const Color(0xffd8ecef),
+                                  shadowColor: const Color(0xff000000),
                                   elevation: 4,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(4.0),
-                                    side: BorderSide(
+                                    side: const BorderSide(
                                         color: Color(0x4d9e9e9e), width: 0),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(8),
+                                    padding: const EdgeInsets.all(8),
                                     child: Column(
                                       mainAxisAlignment:
                                           MainAxisAlignment.start,
@@ -596,7 +598,7 @@ class Screen_One extends StatelessWidget {
                                           crossAxisAlignment:
                                               CrossAxisAlignment.center,
                                           mainAxisSize: MainAxisSize.max,
-                                          children: [
+                                          children: const [
                                             Text(
                                               "Trending Hidoc Bulletin",
                                               textAlign: TextAlign.start,
@@ -610,7 +612,7 @@ class Screen_One extends StatelessWidget {
                                             ),
                                           ],
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 16,
                                           width: 16,
                                         ),
@@ -639,7 +641,7 @@ class Screen_One extends StatelessWidget {
                                                               TextAlign.start,
                                                           overflow:
                                                               TextOverflow.clip,
-                                                          style: TextStyle(
+                                                          style: const TextStyle(
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                             fontStyle: FontStyle
@@ -649,7 +651,7 @@ class Screen_One extends StatelessWidget {
                                                                 0xff000000),
                                                           ),
                                                         ),
-                                                        SizedBox(
+                                                        const SizedBox(
                                                           height: 8,
                                                           width: 16,
                                                         ),
@@ -659,7 +661,7 @@ class Screen_One extends StatelessWidget {
                                                               TextAlign.start,
                                                           overflow:
                                                               TextOverflow.clip,
-                                                          style: TextStyle(
+                                                          style: const TextStyle(
                                                             fontWeight:
                                                                 FontWeight.w400,
                                                             fontStyle: FontStyle
@@ -669,7 +671,7 @@ class Screen_One extends StatelessWidget {
                                                                 0xff000000),
                                                           ),
                                                         ),
-                                                        SizedBox(
+                                                        const SizedBox(
                                                           height: 8,
                                                           width: 16,
                                                         ),
@@ -682,7 +684,7 @@ class Screen_One extends StatelessWidget {
                                                                   .center,
                                                           mainAxisSize:
                                                               MainAxisSize.max,
-                                                          children: [
+                                                          children: const [
                                                             Text(
                                                               "Read More...",
                                                               textAlign:
@@ -705,7 +707,7 @@ class Screen_One extends StatelessWidget {
                                                             ),
                                                           ],
                                                         ),
-                                                        SizedBox(
+                                                        const SizedBox(
                                                           height: 16,
                                                           width: 16,
                                                         ),
@@ -718,7 +720,7 @@ class Screen_One extends StatelessWidget {
                                     ),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                   width: 16,
                                 ),
@@ -728,17 +730,17 @@ class Screen_One extends StatelessWidget {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Card(
-                                      margin: EdgeInsets.all(4.0),
-                                      color: Color(0xfffe9800),
-                                      shadowColor: Color(0xff000000),
+                                      margin: const EdgeInsets.all(4.0),
+                                      color: const Color(0xfffe9800),
+                                      shadowColor: const Color(0xff000000),
                                       elevation: 6,
                                       shape: RoundedRectangleBorder(
                                         borderRadius:
                                             BorderRadius.circular(4.0),
-                                        side: BorderSide(
+                                        side: const BorderSide(
                                             color: Color(0x4d9e9e9e), width: 0),
                                       ),
-                                      child: Padding(
+                                      child: const Padding(
                                         padding: EdgeInsets.all(8),
                                         child: Text(
                                           "Read More Bulletins",
@@ -755,22 +757,22 @@ class Screen_One extends StatelessWidget {
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                   width: 16,
                                 ),
                                 Container(
-                                  margin: EdgeInsets.all(0),
-                                  padding: EdgeInsets.all(8),
+                                  margin: const EdgeInsets.all(0),
+                                  padding: const EdgeInsets.all(8),
                                   width: MediaQuery.of(context).size.width,
                                   height:
                                       MediaQuery.of(context).size.height * 0.25,
                                   decoration: BoxDecoration(
-                                    color: Color(0x00000000),
+                                    color: const Color(0x00000000),
                                     shape: BoxShape.rectangle,
                                     borderRadius: BorderRadius.circular(4.0),
                                     border: Border.all(
-                                        color: Color(0xffb1b1b1), width: 1),
+                                        color: const Color(0xffb1b1b1), width: 1),
                                   ),
                                   child: SingleChildScrollView(
                                     child: Column(
@@ -780,7 +782,7 @@ class Screen_One extends StatelessWidget {
                                           CrossAxisAlignment.center,
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
-                                        Text(
+                                        const Text(
                                           "Latest Articles",
                                           textAlign: TextAlign.start,
                                           overflow: TextOverflow.clip,
@@ -791,11 +793,11 @@ class Screen_One extends StatelessWidget {
                                             color: Color(0xff000000),
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 8,
                                           width: 16,
                                         ),
-                                        Divider(
+                                        const Divider(
                                           color: Color(0xffb1b1b1),
                                           height: 16,
                                           thickness: 2,
@@ -813,7 +815,7 @@ class Screen_One extends StatelessWidget {
                                                 .map((e) => Column(
                                                       children: [
                                                         Padding(
-                                                          padding: EdgeInsets
+                                                          padding: const EdgeInsets
                                                               .symmetric(
                                                                   vertical: 0,
                                                                   horizontal:
@@ -825,7 +827,7 @@ class Screen_One extends StatelessWidget {
                                                             overflow:
                                                                 TextOverflow
                                                                     .clip,
-                                                            style: TextStyle(
+                                                            style: const TextStyle(
                                                               fontWeight:
                                                                   FontWeight
                                                                       .w400,
@@ -838,7 +840,7 @@ class Screen_One extends StatelessWidget {
                                                             ),
                                                           ),
                                                         ),
-                                                        Divider(
+                                                        const Divider(
                                                           color:
                                                               Color(0xff808080),
                                                           height: 16,
@@ -855,22 +857,22 @@ class Screen_One extends StatelessWidget {
                                     ),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                   width: 16,
                                 ),
                                 Container(
                                   margin: EdgeInsets.zero,
-                                  padding: EdgeInsets.all(8),
+                                  padding: const EdgeInsets.all(8),
                                   width: MediaQuery.of(context).size.width,
                                   height: MediaQuery.of(context).size.height *
                                       0.35000000000000003,
                                   decoration: BoxDecoration(
-                                    color: Color(0x00000000),
+                                    color: const Color(0x00000000),
                                     shape: BoxShape.rectangle,
                                     borderRadius: BorderRadius.circular(4.0),
                                     border: Border.all(
-                                        color: Color(0xffb1b1b1), width: 1),
+                                        color: const Color(0xffb1b1b1), width: 1),
                                   ),
                                   child: SingleChildScrollView(
                                     child: Column(
@@ -880,7 +882,7 @@ class Screen_One extends StatelessWidget {
                                           CrossAxisAlignment.center,
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
-                                        Text(
+                                        const Text(
                                           "Trending Articles",
                                           textAlign: TextAlign.start,
                                           overflow: TextOverflow.clip,
@@ -891,11 +893,11 @@ class Screen_One extends StatelessWidget {
                                             color: Color(0xff000000),
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 8,
                                           width: 16,
                                         ),
-                                        Divider(
+                                        const Divider(
                                           color: Color(0xffb1b1b1),
                                           height: 16,
                                           thickness: 2,
@@ -929,7 +931,7 @@ class Screen_One extends StatelessWidget {
                                                             .width,
                                                     fit: BoxFit.cover,
                                                   ),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     height: 8,
                                                     width: 16,
                                                   ),
@@ -937,7 +939,7 @@ class Screen_One extends StatelessWidget {
                                                     e.articleDescription,
                                                     textAlign: TextAlign.start,
                                                     overflow: TextOverflow.clip,
-                                                    style: TextStyle(
+                                                    style: const TextStyle(
                                                       fontWeight:
                                                           FontWeight.w400,
                                                       fontStyle:
@@ -946,7 +948,7 @@ class Screen_One extends StatelessWidget {
                                                       color: Color(0xff000000),
                                                     ),
                                                   ),
-                                                  Divider(
+                                                  const Divider(
                                                     color: Color(0xff808080),
                                                     height: 16,
                                                     thickness: 0,
@@ -962,7 +964,7 @@ class Screen_One extends StatelessWidget {
                                     ),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                   width: 16,
                                 ),
@@ -974,18 +976,18 @@ class Screen_One extends StatelessWidget {
                                     Expanded(
                                       flex: 1,
                                       child: Card(
-                                        margin: EdgeInsets.all(4.0),
-                                        color: Color(0xfffe9800),
-                                        shadowColor: Color(0xff000000),
+                                        margin: const EdgeInsets.all(4.0),
+                                        color: const Color(0xfffe9800),
+                                        shadowColor: const Color(0xff000000),
                                         elevation: 4,
                                         shape: RoundedRectangleBorder(
                                           borderRadius:
                                               BorderRadius.circular(4.0),
-                                          side: BorderSide(
+                                          side: const BorderSide(
                                               color: Color(0x4d9e9e9e),
                                               width: 0),
                                         ),
-                                        child: Padding(
+                                        child: const Padding(
                                           padding: EdgeInsets.all(8),
                                           child: Align(
                                             alignment: Alignment.center,
@@ -1006,11 +1008,11 @@ class Screen_One extends StatelessWidget {
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                   width: 16,
                                 ),
-                                Text(
+                                const Text(
                                   "Whats more on Hidoc Dr.",
                                   textAlign: TextAlign.start,
                                   overflow: TextOverflow.clip,
@@ -1021,7 +1023,7 @@ class Screen_One extends StatelessWidget {
                                     color: Color(0xff000000),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                   width: 16,
                                 ),
@@ -1032,14 +1034,14 @@ class Screen_One extends StatelessWidget {
                                   height:
                                       MediaQuery.of(context).size.height * 0.45,
                                   decoration: BoxDecoration(
-                                    color: Color(0xffececec),
+                                    color: const Color(0xffececec),
                                     shape: BoxShape.rectangle,
                                     borderRadius: BorderRadius.circular(4.0),
                                     border: Border.all(
-                                        color: Color(0x4d9e9e9e), width: 1),
+                                        color: const Color(0x4d9e9e9e), width: 1),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(8),
+                                    padding: const EdgeInsets.all(8),
                                     child: SingleChildScrollView(
                                       child: Column(
                                         mainAxisAlignment:
@@ -1054,7 +1056,7 @@ class Screen_One extends StatelessWidget {
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.center,
                                             mainAxisSize: MainAxisSize.max,
-                                            children: [
+                                            children: const [
                                               Text(
                                                 "News",
                                                 textAlign: TextAlign.start,
@@ -1068,7 +1070,7 @@ class Screen_One extends StatelessWidget {
                                               ),
                                             ],
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             height: 16,
                                             width: 16,
                                           ),
@@ -1082,7 +1084,7 @@ class Screen_One extends StatelessWidget {
                                                           TextAlign.start,
                                                       overflow:
                                                           TextOverflow.clip,
-                                                      style: TextStyle(
+                                                      style: const TextStyle(
                                                         fontWeight:
                                                             FontWeight.w400,
                                                         fontStyle:
@@ -1093,7 +1095,7 @@ class Screen_One extends StatelessWidget {
                                                       ),
                                                     ),
 
-                                                    SizedBox(
+                                                    const SizedBox(
                                                       height: 16,
                                                       width: 16,
                                                     ),
@@ -1112,7 +1114,7 @@ class Screen_One extends StatelessWidget {
                                                               .width,
                                                       fit: BoxFit.fill,
                                                     ),
-                                                    SizedBox(
+                                                    const SizedBox(
                                                       height: 16,
                                                       width: 16,
                                                     ),
@@ -1125,21 +1127,21 @@ class Screen_One extends StatelessWidget {
                                     ),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                   width: 16,
                                 ),
                                 Container(
                                   margin: EdgeInsets.zero,
-                                  padding: EdgeInsets.all(8),
+                                  padding: const EdgeInsets.all(8),
                                   width: MediaQuery.of(context).size.width,
                                   height: 100,
                                   decoration: BoxDecoration(
-                                    color: Color(0x00000000),
+                                    color: const Color(0x00000000),
                                     shape: BoxShape.rectangle,
                                     borderRadius: BorderRadius.circular(4.0),
                                     border: Border.all(
-                                        color: Color(0xffb1b1b1), width: 1),
+                                        color: const Color(0xffb1b1b1), width: 1),
                                   ),
                                   child: SingleChildScrollView(
                                     child: Column(
@@ -1164,24 +1166,24 @@ class Screen_One extends StatelessWidget {
                                                   width: 35,
                                                   height: 35,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xffe3f1fd),
+                                                    color: const Color(0xffe3f1fd),
                                                     shape: BoxShape.circle,
                                                     border: Border.all(
                                                         color:
-                                                            Color(0x4d9e9e9e),
+                                                            const Color(0x4d9e9e9e),
                                                         width: 0),
                                                   ),
-                                                  child: Icon(
+                                                  child: const Icon(
                                                     MdiIcons.trophy,
                                                     color: Color(0xff2c95e6),
                                                     size: 24,
                                                   ),
                                                 ),
-                                                SizedBox(
+                                                const SizedBox(
                                                   height: 16,
                                                   width: 8,
                                                 ),
-                                                Text(
+                                                const Text(
                                                   "Quizzes:",
                                                   textAlign: TextAlign.start,
                                                   overflow: TextOverflow.clip,
@@ -1192,11 +1194,11 @@ class Screen_One extends StatelessWidget {
                                                     color: Color(0xff000000),
                                                   ),
                                                 ),
-                                                SizedBox(
+                                                const SizedBox(
                                                   height: 16,
                                                   width: 8,
                                                 ),
-                                                Expanded(
+                                                const Expanded(
                                                   flex: 1,
                                                   child: Text(
                                                     "Participate and win exciting prizes",
@@ -1214,7 +1216,7 @@ class Screen_One extends StatelessWidget {
                                                 ),
                                               ],
                                             ),
-                                            Divider(
+                                            const Divider(
                                               color: Color(0xff808080),
                                               height: 16,
                                               thickness: 0,
@@ -1238,24 +1240,24 @@ class Screen_One extends StatelessWidget {
                                                   width: 35,
                                                   height: 35,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xffe3f1fd),
+                                                    color: const Color(0xffe3f1fd),
                                                     shape: BoxShape.circle,
                                                     border: Border.all(
                                                         color:
-                                                            Color(0x4d9e9e9e),
+                                                            const Color(0x4d9e9e9e),
                                                         width: 0),
                                                   ),
-                                                  child: Icon(
+                                                  child: const Icon(
                                                     Icons.calculate,
                                                     color: Color(0xff2c95e6),
                                                     size: 24,
                                                   ),
                                                 ),
-                                                SizedBox(
+                                                const SizedBox(
                                                   height: 16,
                                                   width: 8,
                                                 ),
-                                                Text(
+                                                const Text(
                                                   "Medical Calculators:",
                                                   textAlign: TextAlign.start,
                                                   overflow: TextOverflow.clip,
@@ -1266,11 +1268,11 @@ class Screen_One extends StatelessWidget {
                                                     color: Color(0xff000000),
                                                   ),
                                                 ),
-                                                SizedBox(
+                                                const SizedBox(
                                                   height: 16,
                                                   width: 8,
                                                 ),
-                                                Expanded(
+                                                const Expanded(
                                                   flex: 1,
                                                   child: Text(
                                                     "Get access to 800+ based calculators",
@@ -1288,7 +1290,7 @@ class Screen_One extends StatelessWidget {
                                                 ),
                                               ],
                                             ),
-                                            Divider(
+                                            const Divider(
                                               color: Color(0xff808080),
                                               height: 16,
                                               thickness: 0,
@@ -1301,22 +1303,22 @@ class Screen_One extends StatelessWidget {
                                     ),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                   width: 16,
                                 ),
                                 Container(
                                   alignment: Alignment.center,
                                   margin: EdgeInsets.zero,
-                                  padding: EdgeInsets.fromLTRB(8, 8, 8, 0),
+                                  padding: const EdgeInsets.fromLTRB(8, 8, 8, 0),
                                   width: MediaQuery.of(context).size.width,
                                   height: 60,
                                   decoration: BoxDecoration(
-                                    color: Color(0xffffeacc),
+                                    color: const Color(0xffffeacc),
                                     shape: BoxShape.rectangle,
                                     borderRadius: BorderRadius.zero,
                                     border: Border.all(
-                                        color: Color(0x4d9e9e9e), width: 0),
+                                        color: const Color(0x4d9e9e9e), width: 0),
                                   ),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
@@ -1324,7 +1326,7 @@ class Screen_One extends StatelessWidget {
                                         CrossAxisAlignment.center,
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
-                                      Expanded(
+                                      const Expanded(
                                         flex: 1,
                                         child: Text(
                                           "Social Network for doctors - A special feature on Hidoc Dr.",
@@ -1338,23 +1340,23 @@ class Screen_One extends StatelessWidget {
                                           ),
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 16,
                                         width: 16,
                                       ),
                                       Chip(
-                                        labelPadding: EdgeInsets.symmetric(
+                                        labelPadding: const EdgeInsets.symmetric(
                                             horizontal: 4, vertical: 0),
-                                        label: Text("Visit"),
-                                        labelStyle: TextStyle(
+                                        label: const Text("Visit"),
+                                        labelStyle: const TextStyle(
                                           fontSize: 14,
                                           fontWeight: FontWeight.w400,
                                           fontStyle: FontStyle.normal,
                                           color: Color(0xffffffff),
                                         ),
-                                        backgroundColor: Color(0xfffd9800),
+                                        backgroundColor: const Color(0xfffd9800),
                                         elevation: 4,
-                                        shadowColor: Color(0xff808080),
+                                        shadowColor: const Color(0xff808080),
                                         shape: RoundedRectangleBorder(
                                           borderRadius:
                                               BorderRadius.circular(16.0),
@@ -1363,7 +1365,7 @@ class Screen_One extends StatelessWidget {
                                     ],
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                   width: 16,
                                 ),
@@ -1371,7 +1373,7 @@ class Screen_One extends StatelessWidget {
                             ),
                           );
                         }
-                        return Center(
+                        return const Center(
                           child: CircularProgressIndicator(),
                         );
                       }),

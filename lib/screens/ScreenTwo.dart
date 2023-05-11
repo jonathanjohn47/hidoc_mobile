@@ -6,13 +6,15 @@ import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
 class ScreenTwo extends StatelessWidget {
+  const ScreenTwo({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(0),
+        preferredSize: const Size.fromHeight(0),
         child: Container(
-          color: Color(0xfffabea7),
+          color: const Color(0xfffabea7),
         ),
       ),
       body: Stack(
@@ -22,17 +24,17 @@ class ScreenTwo extends StatelessWidget {
             left: -50.w,
             child: CircleAvatar(
               radius: 45.w,
-              backgroundColor: Color(0xfffabea7),
+              backgroundColor: const Color(0xfffabea7),
             ),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+            padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisSize: MainAxisSize.max,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 16,
                   width: 16,
                 ),
@@ -43,19 +45,19 @@ class ScreenTwo extends StatelessWidget {
                   children: [
                     Container(
                       alignment: Alignment.center,
-                      margin: EdgeInsets.all(0),
-                      padding: EdgeInsets.all(0),
+                      margin: const EdgeInsets.all(0),
+                      padding: const EdgeInsets.all(0),
                       width: 60,
                       height: 20,
                       decoration: BoxDecoration(
-                        color: Color(0xffd0f1f6),
+                        color: const Color(0xffd0f1f6),
                         shape: BoxShape.rectangle,
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(8.0),
                             bottomRight: Radius.circular(8.0)),
-                        border: Border.all(color: Color(0xffd0f1f6), width: 1),
+                        border: Border.all(color: const Color(0xffd0f1f6), width: 1),
                       ),
-                      child: Text(
+                      child: const Text(
                         "hidoc",
                         textAlign: TextAlign.start,
                         overflow: TextOverflow.clip,
@@ -69,7 +71,7 @@ class ScreenTwo extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                   width: 16,
                 ),
@@ -77,7 +79,7 @@ class ScreenTwo extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisSize: MainAxisSize.max,
-                  children: [
+                  children: const [
                     Icon(
                       Icons.home,
                       color: Color(0xffffffff),
@@ -102,7 +104,7 @@ class ScreenTwo extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                   width: 16,
                 ),
@@ -110,7 +112,7 @@ class ScreenTwo extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisSize: MainAxisSize.max,
-                  children: [
+                  children: const [
                     Text(
                       "Hidoc Bulletin",
                       textAlign: TextAlign.start,
@@ -124,7 +126,7 @@ class ScreenTwo extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                   width: 16,
                 ),
@@ -134,7 +136,7 @@ class ScreenTwo extends StatelessWidget {
                     scrollDirection: Axis.vertical,
                     padding: EdgeInsets.zero,
                     shrinkWrap: false,
-                    physics: ScrollPhysics(),
+                    physics: const ScrollPhysics(),
                     children: [
                       Column(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -152,20 +154,20 @@ class ScreenTwo extends StatelessWidget {
                                 width: MediaQuery.of(context).size.width * 0.3,
                                 height: 8,
                                 decoration: BoxDecoration(
-                                  color: Color(0xff02bdd5),
+                                  color: const Color(0xff02bdd5),
                                   shape: BoxShape.rectangle,
                                   borderRadius: BorderRadius.zero,
                                   border: Border.all(
-                                      color: Color(0x4d9e9e9e), width: 0),
+                                      color: const Color(0x4d9e9e9e), width: 0),
                                 ),
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                             width: 16,
                           ),
-                          Text(
+                          const Text(
                             "Vaccine hesitancy: Where are we and where are we going? ",
                             textAlign: TextAlign.start,
                             overflow: TextOverflow.clip,
@@ -176,11 +178,11 @@ class ScreenTwo extends StatelessWidget {
                               color: Color(0xff000000),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                             width: 16,
                           ),
-                          Text(
+                          const Text(
                             "A justified way to prevent infection explosion associated with lethal damage is timely vaccination. It provides immunization, builds self-immunity & provides overspread health protection.... ",
                             textAlign: TextAlign.start,
                             overflow: TextOverflow.clip,
@@ -191,7 +193,7 @@ class ScreenTwo extends StatelessWidget {
                               color: Color(0xff000000),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                             width: 16,
                           ),
@@ -199,7 +201,7 @@ class ScreenTwo extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisSize: MainAxisSize.max,
-                            children: [
+                            children: const [
                               Text(
                                 "Read More...",
                                 textAlign: TextAlign.start,

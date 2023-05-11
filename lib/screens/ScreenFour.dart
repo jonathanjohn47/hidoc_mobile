@@ -5,10 +5,12 @@
 import 'package:flutter/material.dart';
 
 class ScreenFour extends StatelessWidget {
+  const ScreenFour({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffffffff),
+      backgroundColor: const Color(0xffffffff),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -20,15 +22,15 @@ class ScreenFour extends StatelessWidget {
             mainAxisSize: MainAxisSize.max,
             children: [
               Card(
-                margin: EdgeInsets.all(4.0),
-                color: Color(0xfffe9800),
-                shadowColor: Color(0xff000000),
+                margin: const EdgeInsets.all(4.0),
+                color: const Color(0xfffe9800),
+                shadowColor: const Color(0xff000000),
                 elevation: 6,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4.0),
-                  side: BorderSide(color: Color(0x4d9e9e9e), width: 0),
+                  side: const BorderSide(color: Color(0x4d9e9e9e), width: 0),
                 ),
-                child: Padding(
+                child: const Padding(
                   padding: EdgeInsets.all(8),
                   child: Text(
                     "Read More Bulletins",
@@ -45,20 +47,20 @@ class ScreenFour extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
             width: 16,
           ),
           Container(
-            margin: EdgeInsets.all(0),
-            padding: EdgeInsets.all(8),
+            margin: const EdgeInsets.all(0),
+            padding: const EdgeInsets.all(8),
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height * 0.25,
             decoration: BoxDecoration(
-              color: Color(0x00000000),
+              color: const Color(0x00000000),
               shape: BoxShape.rectangle,
               borderRadius: BorderRadius.circular(4.0),
-              border: Border.all(color: Color(0xffb1b1b1), width: 1),
+              border: Border.all(color: const Color(0xffb1b1b1), width: 1),
             ),
             child: SingleChildScrollView(
               child: Column(
@@ -66,7 +68,7 @@ class ScreenFour extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisSize: MainAxisSize.max,
                 children: [
-                  Text(
+                  const Text(
                     "Latest Articles",
                     textAlign: TextAlign.start,
                     overflow: TextOverflow.clip,
@@ -77,11 +79,11 @@ class ScreenFour extends StatelessWidget {
                       color: Color(0xff000000),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 8,
                     width: 16,
                   ),
-                  Divider(
+                  const Divider(
                     color: Color(0xffb1b1b1),
                     height: 16,
                     thickness: 2,
@@ -92,7 +94,7 @@ class ScreenFour extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisSize: MainAxisSize.min,
-                    children: [
+                    children: const [
                       Padding(
                         padding:
                             EdgeInsets.symmetric(vertical: 0, horizontal: 8),
@@ -121,20 +123,20 @@ class ScreenFour extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
             width: 16,
           ),
           Container(
             margin: EdgeInsets.zero,
-            padding: EdgeInsets.all(8),
+            padding: const EdgeInsets.all(8),
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height * 0.35000000000000003,
             decoration: BoxDecoration(
-              color: Color(0x00000000),
+              color: const Color(0x00000000),
               shape: BoxShape.rectangle,
               borderRadius: BorderRadius.circular(4.0),
-              border: Border.all(color: Color(0xffb1b1b1), width: 1),
+              border: Border.all(color: const Color(0xffb1b1b1), width: 1),
             ),
             child: SingleChildScrollView(
               child: Column(
@@ -142,7 +144,7 @@ class ScreenFour extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisSize: MainAxisSize.max,
                 children: [
-                  Text(
+                  const Text(
                     "Trending Articles",
                     textAlign: TextAlign.start,
                     overflow: TextOverflow.clip,
@@ -153,11 +155,11 @@ class ScreenFour extends StatelessWidget {
                       color: Color(0xff000000),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 8,
                     width: 16,
                   ),
-                  Divider(
+                  const Divider(
                     color: Color(0xffb1b1b1),
                     height: 16,
                     thickness: 2,
@@ -176,18 +178,18 @@ class ScreenFour extends StatelessWidget {
                         children: [
                           ///***If you have exported images you must have to copy those images in assets/images directory.
                           Image(
-                            image: NetworkImage(
+                            image: const NetworkImage(
                                 "https://picsum.photos/250?image=9"),
                             height: 100,
                             width: MediaQuery.of(context).size.width,
                             fit: BoxFit.cover,
                           ),
 
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                             width: 16,
                           ),
-                          Text(
+                          const Text(
                             "Understanding the Importance of Sirs Criteria in Modern Healthcare ",
                             textAlign: TextAlign.start,
                             overflow: TextOverflow.clip,
@@ -198,7 +200,7 @@ class ScreenFour extends StatelessWidget {
                               color: Color(0xff000000),
                             ),
                           ),
-                          Divider(
+                          const Divider(
                             color: Color(0xff808080),
                             height: 16,
                             thickness: 0,
